@@ -23,10 +23,10 @@ public class Exercicio {
       } else if (aritmética == 3) {
          int Resultado = Numero1 / Numero2;
 
-      } else {
+      } else if(aritmética==4){
          int Resultado = Numero1 * Numero2;
 
-      }
+      }else if (aritmética==4 && Numero2!=0);
 
       int Resultado = Numero1 * Numero2;
       System.out.println("o resultado foi de " + Resultado);
@@ -35,15 +35,15 @@ public class Exercicio {
 
    public void Exercicio2() {
       System.out.println("digite o o numero da matricula");
-      double Matricula = sc.nextInt();
+      double matricula = sc.nextInt();
 
-      if (Matricula % 4 == 0) {
+      if (matricula % 4 == 0) {
          System.out.println("Time do Chris");
 
-      } else if (Matricula % 4 == 1) {
+      } else if (matricula % 4 == 1) {
          System.out.println("Time do Greg");
 
-      } else if (Matricula % 4 == 2) {
+      } else if (matricula % 4 == 2) {
          System.out.println("Time do Caruso");
 
       } else {
@@ -58,23 +58,23 @@ public class Exercicio {
     */
    public void Exercicio3() {
       System.out.println("digite a quantidade de morango");
-      double MorangoKG = sc.nextDouble();
+      double morangoKG = sc.nextDouble();
       System.out.println("digite a quantidade de maca");
-      Double MacaKG = sc.nextDouble();
+      Double macaKG = sc.nextDouble();
       System.out.println("digite a quantidade de banana");
-      Double BananaKG = sc.nextDouble();
-      double Morango = 2.50;
-      double Maça = 1.80;
-      double Banana = 1.30;
-      double ValorFinal = (Morango * MorangoKG) + (Maça * MacaKG) + (Banana * BananaKG);
+      Double bananaKG = sc.nextDouble();
+      double morango = 2.50;
+      double maça = 1.80;
+      double banana = 1.30;
+      double valorFinal = (morango * morangoKG) + (maça * macaKG) + (banana * bananaKG);
       int percentualDesconto = 10;
-      if (MorangoKG + MacaKG + BananaKG > 8 || ValorFinal > 25) {
-         double desconto = (ValorFinal * percentualDesconto) / 100;
-         double precoComDesconto = ValorFinal - desconto;
+      if (morangoKG + macaKG + bananaKG > 8 || valorFinal > 25) {
+         double desconto = (valorFinal * percentualDesconto) / 100;
+         double precoComDesconto = valorFinal - desconto;
          System.out.println(" o valor a pagar" + precoComDesconto);
 
       } else {
-         System.out.println("o valor a pagar é " + ValorFinal);
+         System.out.println("o valor a pagar é " + valorFinal);
       }
 
    }
